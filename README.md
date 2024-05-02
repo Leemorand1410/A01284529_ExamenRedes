@@ -22,12 +22,13 @@ Para ejecutar esta aplicación, necesitarás tener instalado lo siguiente:
 ## Uso
 
 1. Ejecuta el servidor Node.js ejecutando `node app.js`.
-2.  Es necesario asegurarse que para que el proyecto funcione las carpetas **`decrypted_images`** y **`encrypted_images`** esten vacias, ya que si se encuentran archivos con el mismo nombre puede llegar a fallar. 
+2.  Es necesario asegurarse que para que el proyecto funcione las carpetas **`decrypted_images`** y **`encrypted_images`** esten vacias o en todo caso que no esten, ya que si se encuentran archivos con el mismo nombre puede llegar a fallar, y si no existen las carpetas el archivo Encriptacion.py las genera. 
 3. Accede a la aplicación en tu navegador web en `http://localhost:3000/encrypt`.
 4. En cualquier caso que no llegara a funcionar utilizar el siguiente comando
  `curl -X POST -H "Content-Type: application/json" -d '{"data": "tus_datos_a_encriptar"}' http://localhost:3000/encrypt` 
 en la terminal con el directorio raiz del proyecto 
-5. Si se quiere volver a usar la aplicacion, borrar las imagenes ya anteriormente mencionadas en el paso 2. 
+5. Si se quiere volver a usar la aplicacion, borrar las imagenes ya anteriormente mencionadas en el paso 2.
+6. para comprobar la encriptacion y desencriptacion, ir **`decrypted_images`** y **`encrypted_images`**
 
 
 ### Endpoints API
